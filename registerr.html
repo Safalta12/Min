@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./register.php" method="post">
+    <fieldset>
+        <legend>Log in</legend>
+        <label for="Username">Username:</label>
+        <input required maxlength="10" type="text" name="Username" id="Username"><br><br>
+        <label for="Password">Password:</label>
+        <input required maxlength="10" type="text" name="Password" id="Password"><br><br>
+        <label for="Confirm Password">Confirm Password:</label>
+        <input required maxlength="10" type="text" name="Confirm Password" id="Confirm Password">
+    </fieldset><br>
+    <fieldset>
+        <legend>Information</legend>
+      <label for="Name">Name:</label>
+      <input required maxlength="10" type="text" name="Name" id="Name"><br><br>
+      <label for="user_date">DOB: </label>
+     <input required maxlength="10" type="date" id="user_date"><br><br>
+     <label for="Parent name">Parent name: </label>
+    <input required maxlength="10" type="text" id="Parent name"><br><br>
+    <label>Gender</label><br>
+    <input type="radio" name="gender" id="gender-male" value="male"><label for="gender-male">Male</label>
+    <input type="radio" name="gender" id="gender-female" value="female"><label for="gender-female">Female</label>
+    <input type="radio" name="gender" id="gender-others" value="Others"><label for="gender-others">Others</label><br><br>
+    <legend>Skills</legend>
+    <input type="checkbox" name="skills[]" id="skills_html" value="HTML"><label for="skills_html">HTML</label>
+    <input type="checkbox" name="skills[]" id="skills_CSS" value="CSS"><label for="skills_CSS">CSS</label>
+    <input type="checkbox" name="skills[]" id="skills_JavaScript" value="JavaScript"><label for="skills_JavaScript">JavaScript</label>
+    <input type="checkbox" name="skills[]" id="skills_Python" value="Python"><label for="skills_Python">Python</label><br><br>
+    <label for="your_photo">Upload a photo</label>
+   <input accept=".jpeg,.jpg" type="file" name="your_photo" id="your_photo"><br><br>
+  <label for="your_photo">Upload a CV</label>
+    <input accept=".pdf,.doc" type="file" name="your_photo" id="your_photo">
+</fieldset><br>
+<fieldset>
+    <legend>Address</legend>
+    <label for="country">Country</label>
+            <select>
+                <optgroup Label="Asia">
+                <option>Nepal</option>
+                <option>India</option>
+                <option>Korea</option>
+                <option>China</option>
+                <option>Japan</option>
+            </optgroup>
+            <option LAbel="Europe">
+            <option value="Uk">Uk</option>
+            </option>
+            </select><br><br>
+            <label for="city">City</label>
+            <select>
+                <option>Kathmandu</option>
+                <option>Pokhara</option>
+                <option>Lalitpur</option>
+                <option>Bharatpur</option>
+                <option>Ghorahi</option>
+            </select>
+</fieldset><br>
+<fieldset>
+    <legend>Contact</legend>
+    <label for="Email">Email:</label>
+    <input type="text" name="Email" id="Email"><br><br>
+    <label for="Phone no">Phone no:</label>
+    <input type="number" name="Phone no">
+</fieldset><br>
+<tr>
+    <td> <input type="Submit" value="submit"></td>
+</tr>
+    </form>
+</body>
+</html>
