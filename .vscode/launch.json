@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "Min_759c907a"
+    },
+    {
+      "type": "java",
+      "name": "javaApp",
+      "request": "launch",
+      "mainClass": "javaApp",
+      "projectName": "Min_759c907a"
+    },
+    {
+      "type": "java",
+      "name": "Square",
+      "request": "launch",
+      "mainClass": "Square",
+      "projectName": "Min_759c907a"
+    },
+    {
+      "type": "java",
+      "name": "Ap",
+      "request": "launch",
+      "mainClass": "Ap",
+      "projectName": "Min_759c907a"
+    },
+    {
+      "type": "java",
       "name": "Appp",
       "request": "launch",
       "mainClass": "Appp",
