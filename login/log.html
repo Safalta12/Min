@@ -7,6 +7,8 @@
     <title>Login</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
 <body>
@@ -16,30 +18,29 @@
                 <header>Login</header>
                 <form action="#">
                     <div class="field">
-                        <input type="username" name="username" placeholder="Username ">
+                        <input type="text" name="username" placeholder="Username">
                     </div>
                     <div class="field">
-                        <input type="password" name="" placeholder="Password ">
+                        <input type="password" name="password" placeholder="Password">
                         <i class='bx bx-hide icon-a'></i>
                     </div>
                     <div class="link">
-                        <a href="" class="forget">Forgot password?</a>
+                        <a href="forgot-password.html" class="forget">Forgot password?</a>
                     </div>
                     <div class="button">
-                        <button>Login</button>
+                        <button type="submit">Login</button>
                     </div>
-
                 </form>
             </div>
             <div class="line"></div>
             <div class="icon">
-                <a href="" class="google">
-                    <img src="image/google.jpg" alt="" class="google-img">
-                    <span>Login with google</span>
-                </a>
+                <div id="g_id_onload"
+                     data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                     data-callback="handleCredentialResponse">
+                </div>
+                <div class="g_id_signin" data-type="standard"></div>
             </div>
         </div>
     </section>
 </body>
-<script src="./script.js"></script>
 </html>
