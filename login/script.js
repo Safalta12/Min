@@ -15,4 +15,8 @@ pwShowHide.forEach(eyeIcon => {
 
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 909a7c65154efa52fd43b84ae68d1330a2910720
